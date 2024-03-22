@@ -26,3 +26,14 @@ The **Article Reading Time** WordPress plugin accurately calculates the estimate
 - Download the plugin from the [GitHub repository](https://github.com/aialvi/article-reading-time).
 - Unzip the plugin and upload the `article-reading-time` folder to your `/wp-content/plugins/` directory.
 - Activate the plugin through the 'Plugins' menu in WordPress.
+
+## Screenshots
+
+Editor: 
+
+![image](https://github.com/aialvi/article-reading-time/assets/10681348/b2d963cd-00d1-4daa-aad7-e2a41deff8e3)
+
+Frontend:
+
+![image](https://github.com/aialvi/article-reading-time/assets/10681348/f7738ebf-f8bf-40d7-8249-6a53d6202f72)
+
