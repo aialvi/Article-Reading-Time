@@ -155,13 +155,12 @@ class Menu
     }
     public function admin_menu()
     {
-        add_menu_page(
+        add_options_page(
             __('Article Reading Time', 'article-reading-time'),
             __('Reading Time', 'article-reading-time'),
             'manage_options',
             'article-reading-time',
-            [$this, 'pluginPageHTML'],
-            'dashicons-clock'
+            [$this, 'pluginPageHTML']
         );
     }
 
