@@ -1,0 +1,20 @@
+vendor
+build
+.idea
+.DS_Store
+node_modules
+yarn-error.log
+
+# dist folder
+dist/*
+!dist/core.asset.php
+!dist/core.js
+!dist/style-core.css
+!dist/vendors.css
+!dist/vendors.js
+
+# asset folder
+assets/css
+assets/js
+!assets/vendor
+!assets/lib
