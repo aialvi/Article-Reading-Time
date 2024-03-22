@@ -1,0 +1,62 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Article Reading Time\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-22 21:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.4.3\n"
+"X-Domain: article-reading-time"
+
+#. Author of the plugin
+msgid "aialvi"
+msgstr ""
+
+#. Name of the plugin
+#: includes/Admin/Menu.php:159
+msgid "Article Reading Time"
+msgstr ""
+
+#: includes/Frontend/Article.php:36
+msgid "Article Statistics"
+msgstr ""
+
+#. Description of the plugin
+msgid "Calculates the estimated reading time for articles."
+msgstr ""
+
+#: includes/Frontend/Article.php:43
+msgid "Character count: "
+msgstr ""
+
+#: includes/Frontend/Article.php:46
+msgid "Estimated reading time: "
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://aialvi.me/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/aialvi/article-reading-time"
+msgstr ""
+
+#: includes/Frontend/Article.php:46
+msgid "minute(s)"
+msgstr ""
+
+#: includes/Admin/Menu.php:160
+msgid "Reading Time"
+msgstr ""
+
+#: includes/Frontend/Article.php:40
+msgid "Word count: "
+msgstr ""

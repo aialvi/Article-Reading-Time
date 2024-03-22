@@ -6,6 +6,8 @@
  * Version: 1.0.0
  * Author: aialvi
  * Author URI: https://aialvi.me/
+ * Text Domain: article-reading-time
+ * Domain Path: /languages
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
@@ -84,6 +86,16 @@ final class ArticleReadingTime
         } else {
             new Aialvi\ArticleReadingTime\Frontend();
         }
+        // localization
+        add_action('init', [$this, 'load_textdomain']);
+    }
+
+    /**
+     * Load plugin textdomain
+     */
+    public function load_textdomain()
+    {
+        load_plugin_textdomain('article-reading-time', false, dirname(plugin_basename(__FILE__)) . '/languages');
     }
 
     /**

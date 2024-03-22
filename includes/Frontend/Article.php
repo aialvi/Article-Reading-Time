@@ -37,13 +37,13 @@ class Article
 
         $html = '<div class="article-reading-time"><h4 class="art-title">' . $title . '</h4>';
         if (get_option('article_reading_time_word_count', 'true')) {
-            $html .= '<p class="art-word-count">Word count: ' . $word_count . '</p>';
+            $html .= '<p class="art-word-count">' . __('Word count: ', 'article-reading-time') . $word_count . '</p>';
         }
         if (get_option('article_reading_time_character_count', 'true')) {
-            $html .= '<p class="art-character-count">Character count: ' . $character_count . '</p>';
+            $html .= '<p class="art-character-count">' . __('Character count: ', 'article-reading-time') . $character_count . '</p>';
         }
         if (get_option('article_reading_time_read_time', 'true')) {
-            $html .= '<p class="art-reading-time">Estimated reading time: ' . $reading_time . ' minute(s)</p>';
+            $html .= '<p class="art-reading-time">' . __('Estimated reading time: ', 'article-reading-time') . $reading_time . __('minute(s)', 'article-reading-time') . '</p>';
         }
         $html .= '</div>';
 
