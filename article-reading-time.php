@@ -19,12 +19,20 @@ if (!defined('ABSPATH')) {
  */
 final class ArticleReadingTime
 {
+
+    /**
+     * Plugin version
+     *
+     * @var string
+     */
+    const version = '1.0.0';
+
     /**
      * Constructor
      */
     private function __construct()
     {
-
+        $this->define_constants();
     }
 
     /**
@@ -41,6 +49,18 @@ final class ArticleReadingTime
         }
 
         return $instance;
+    }
+
+    /**
+     * Define constants
+     */
+    public function define_constants()
+    {
+        define('ART_PLUGIN_VERSION', self::version);
+        define('ART_PLUGIN_FILE', __FILE__);
+        define('ART_PLUGIN_PATH', __DIR__);
+        define('ART_PLUGIN_URL', plugins_url('', ART_PLUGIN_FILE));
+        define('ART_PLUGIN_ASSETS', ART_PLUGIN_URL . '/assets');
     }
 }
 
