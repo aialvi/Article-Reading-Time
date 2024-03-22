@@ -82,7 +82,7 @@ final class ArticleReadingTime
         if (is_admin()) {
             new Aialvi\ArticleReadingTime\Admin();
         } else {
-            // Todo for frontend
+            new Aialvi\ArticleReadingTime\Frontend();
         }
     }
 

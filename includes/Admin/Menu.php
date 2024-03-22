@@ -59,7 +59,7 @@ class Menu
             'article_reading_time_title',
             array(
                 'type' => 'string',
-                'default' => 'Estimated Reading Time',
+                'default' => 'Article Statistics',
                 'sanitize_callback' => 'sanitize_text_field'
             )
         );
@@ -148,7 +148,7 @@ class Menu
 
     function titleHTML()
     {
-        $title = get_option('article_reading_time_title', 'Estimated Reading Time');
+        $title = get_option('article_reading_time_title', 'Article Statistics');
         ?>
         <input type="text" name="article_reading_time_title" value="<?php echo esc_attr($title); ?>">
         <?php
