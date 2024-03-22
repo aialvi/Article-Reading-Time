@@ -33,6 +33,8 @@ final class ArticleReadingTime
     private function __construct()
     {
         $this->define_constants();
+
+        register_activation_hook(__FILE__, [$this, 'activate']);
     }
 
     /**
@@ -61,6 +63,20 @@ final class ArticleReadingTime
         define('ART_PLUGIN_PATH', __DIR__);
         define('ART_PLUGIN_URL', plugins_url('', ART_PLUGIN_FILE));
         define('ART_PLUGIN_ASSETS', ART_PLUGIN_URL . '/assets');
+    }
+
+    /**
+     * Do stuff on plugin activation
+     */
+    public static function activate()
+    {
+        $installed = get_option('ART_plugin_installed');
+
+        if (!$installed) {
+            update_option('ART_plugin_installed', time());
+        }
+
+        update_option('ART_plugin_version', ART_PLUGIN_VERSION);
     }
 }
 
