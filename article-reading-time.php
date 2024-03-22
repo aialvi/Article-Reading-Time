@@ -15,6 +15,11 @@ if (!defined('ABSPATH')) {
 }
 
 /**
+ * Autoload classes
+ */
+require_once __DIR__ . '/vendor/autoload.php';
+
+/**
  * ArticleReadingTime main class
  */
 final class ArticleReadingTime
@@ -35,6 +40,8 @@ final class ArticleReadingTime
         $this->define_constants();
 
         register_activation_hook(__FILE__, [$this, 'activate']);
+
+        add_action('plugins_loaded', [$this, 'init_plugin']);
     }
 
     /**
@@ -63,6 +70,20 @@ final class ArticleReadingTime
         define('ART_PLUGIN_PATH', __DIR__);
         define('ART_PLUGIN_URL', plugins_url('', ART_PLUGIN_FILE));
         define('ART_PLUGIN_ASSETS', ART_PLUGIN_URL . '/assets');
+    }
+
+    /**
+     * Initialize the plugin
+     * 
+     * @return void
+     */
+    public function init_plugin()
+    {
+        if (is_admin()) {
+            new Aialvi\ArticleReadingTime\Admin();
+        } else {
+            // Todo for frontend
+        }
     }
 
     /**

@@ -1,0 +1,20 @@
+{
+  "name": "aialvi/article-reading-time",
+  "description": "Calculates the estimated reading time for articles.",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "autoload": {
+    "psr-4": {
+      "Aialvi\\ArticleReadingTime\\": "includes/"
+    },
+    "files": []
+  },
+  "authors": [
+    {
+      "name": "Aminul Islam Alvi",
+      "email": "aminulialvi@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}
