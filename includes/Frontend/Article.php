@@ -31,7 +31,7 @@ class Article
     {
         $word_count = str_word_count(strip_tags($content));
         $character_count = strlen(strip_tags($content));
-        $reading_time = round($word_count / 225);
+        $reading_time = ceil($word_count / 225);
         $reading_time = apply_filters('article_reading_time', $reading_time);
         $title = get_option('article_reading_time_title', __('Article Statistics', 'article-reading-time'));
 
