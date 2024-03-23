@@ -29,8 +29,8 @@ class Article
      */
     public function createHTML($content)
     {
-        $word_count = str_word_count(strip_tags($content));
-        $character_count = strlen(strip_tags($content));
+        $word_count = str_word_count(wp_strip_all_tags($content));
+        $character_count = strlen(wp_strip_all_tags($content));
         $reading_time = ceil($word_count / 225);
         $reading_time = apply_filters('article_reading_time', $reading_time);
         $title = get_option('article_reading_time_title', __('Article Statistics', 'article-reading-time'));
