@@ -43,7 +43,7 @@ class Article
             $html .= '<p class="art-character-count">' . __('Character count: ', 'article-reading-time') . $character_count . '</p>';
         }
         if (get_option('article_reading_time_read_time', 'true')) {
-            $html .= '<p class="art-reading-time">' . __('Estimated reading time: ', 'article-reading-time') . $reading_time . __('minute(s)', 'article-reading-time') . '</p>';
+            $html .= '<p class="art-reading-time">' . __('Estimated reading time: ', 'article-reading-time') . $reading_time . __(' minute(s)', 'article-reading-time') . '</p>';
         }
         $html .= '</div>';
 
